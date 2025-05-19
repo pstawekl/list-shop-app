@@ -8,7 +8,6 @@ type Props = { shop: Shop };
 export const ShopListItem: FC<Props> = memo(({ shop }) => {
   const { street, city } = parseAddress(shop.address);
 
-  // Tworzenie URL do Google Maps na podstawie adresu
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(shop.address)}`;
 
   return (

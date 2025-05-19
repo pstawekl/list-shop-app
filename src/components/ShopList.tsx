@@ -17,24 +17,21 @@ export const ShopList = ({ shops, isLoading, error }: Props) => {
         width: window.innerWidth
     });
 
-    // Znajdź element nagłówka po załadowaniu komponentu
     useLayoutEffect(() => {
         const timer = setTimeout(() => {
             const headerElement = document.querySelector('#header') as HTMLElement;
             if (headerElement) {
                 setHeader(headerElement);
             }
-        }, 100); // Zwiększone opóźnienie dla pewności
+        }, 100);
 
         return () => clearTimeout(timer);
     }, []);
 
-    // Aktualizuj wymiary po znalezieniu nagłówka i przy zmianie rozmiaru okna
     useEffect(() => {
         const updateDimensions = () => {
             if (header) {
-                // Obliczamy dostępną wysokość: wysokość okna minus wysokość nagłówka minus dodatkowy margines
-                const calculatedHeight = window.innerHeight - header.clientHeight - 16; // 16px to margines dla bezpieczeństwa
+                const calculatedHeight = window.innerHeight - header.clientHeight - 16;
 
                 setDimensions({
                     height: calculatedHeight > 0 ? calculatedHeight : 0,
@@ -43,7 +40,6 @@ export const ShopList = ({ shops, isLoading, error }: Props) => {
             }
         };
 
-        // Aktualizuj wymiary od razu i przy każdej zmianie rozmiaru okna
         updateDimensions();
         window.addEventListener('resize', updateDimensions);
 
@@ -54,7 +50,6 @@ export const ShopList = ({ shops, isLoading, error }: Props) => {
     if (error) return <p className="p-4 text-red-600">{error}</p>;
     if (shops.length === 0) return <p className="p-4">No shops found.</p>;
 
-    // Renderuj listę tylko gdy mamy obliczoną wysokość
     return dimensions.height > 0 ? (
         <div className="w-full overflow-hidden">
             <List

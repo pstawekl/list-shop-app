@@ -1,7 +1,5 @@
 import { testShop } from './db';
 
-// src/db.test.ts
-
 describe('testShop', () => {
   test('should have the correct structure', () => {
     expect(testShop).toHaveProperty('id');
@@ -34,7 +32,6 @@ describe('testShop', () => {
     const shopCopy = { ...testShop };
     expect(shopCopy).toEqual(testShop);
     
-    // Attempting to modify the copy shouldn't affect the original
     shopCopy.id = '456';
     expect(testShop.id).toBe('123');
   });
