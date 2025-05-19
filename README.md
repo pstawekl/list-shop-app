@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# React Component App - Lista Sklepów
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lista Sklepów to interaktywna aplikacja webowa umożliwiająca przeglądanie listy sklepów. Aplikacja prezentuje listę sklepów wraz z ich szczegółami, wykorzystując nowoczesne technologie frontendowe.
 
-## Available Scripts
+## Wykorzystane technologie
 
-In the project directory, you can run:
+### Frontend
+- **React 19** - biblioteka JavaScript do budowania interfejsów użytkownika
+- **TypeScript 4.9** - typowany superset języka JavaScript zwiększający bezpieczeństwo kodu
+- **TailwindCSS 3.4** - framework CSS oparty na klasach utility
+- **React Window** - biblioteka do efektywnego renderowania dużych list
+
+### Narzędzia deweloperskie
+- **Create React App** - narzędzie do szybkiego tworzenia aplikacji React
+- **Jest** - framework do testowania kodu JavaScript
+- **React Testing Library** - zestaw narzędzi do testowania komponentów React
+- **PostCSS** - narzędzie do przetwarzania CSS
+
+## Testy
+Aplikacja jest szeroko testowana przy użyciu:
+- **Jest** - do testów jednostkowych
+- **React Testing Library** - do testów komponentów
+- **Testing Library User Event** - do symulowania interakcji użytkownika
+
+## Dostępne skrypty
+
+W katalogu projektu możesz uruchomić:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Uruchamia aplikację w trybie deweloperskim.\
+Otwórz [http://localhost:3000](http://localhost:3000), aby wyświetlić ją w przeglądarce.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Strona zostanie przeładowana po wprowadzeniu zmian.\
+Zobaczysz również wszelkie błędy lint w konsoli.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uruchamia testy w interaktywnym trybie watch.\
+Zobacz sekcję o [uruchamianiu testów](https://facebook.github.io/create-react-app/docs/running-tests), aby uzyskać więcej informacji.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Buduje aplikację do produkcji w folderze `build`.\
+Odpowiednio bundluje React w trybie produkcyjnym i optymalizuje build dla najlepszej wydajności.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build jest zminifikowany, a nazwy plików zawierają hashe.\
+Twoja aplikacja jest gotowa do wdrożenia!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Zobacz sekcję o [wdrażaniu](https://facebook.github.io/create-react-app/docs/deployment), aby uzyskać więcej informacji.
 
-### `npm run eject`
+## Więcej informacji
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Aby dowiedzieć się więcej o React, odwiedź [dokumentację React](https://reactjs.org/).\
+Aby poznać szczegóły Create React App, sprawdź [dokumentację Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
