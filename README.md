@@ -1,29 +1,26 @@
-# React Component App - Lista Sklepów
+# Lista Sklepów
 
 Lista Sklepów to interaktywna aplikacja webowa umożliwiająca przeglądanie listy sklepów. Aplikacja prezentuje listę sklepów wraz z ich szczegółami, wykorzystując nowoczesne technologie frontendowe.
 
 ## Wykorzystane technologie
 
 ### Frontend
-- **React 19** - biblioteka JavaScript do budowania interfejsów użytkownika
-- **TypeScript 4.9** - typowany superset języka JavaScript zwiększający bezpieczeństwo kodu
-- **TailwindCSS 3.4** - framework CSS oparty na klasach utility
-- **React Window** - biblioteka do efektywnego renderowania dużych list
+- **React 19**
+- **TypeScript 4.9**
+- **TailwindCSS 3.4**
+- **React Window**
 
 ### Narzędzia deweloperskie
-- **Create React App** - narzędzie do szybkiego tworzenia aplikacji React
-- **Jest** - framework do testowania kodu JavaScript
-- **React Testing Library** - zestaw narzędzi do testowania komponentów React
-- **PostCSS** - narzędzie do przetwarzania CSS
+- **Create React App**
+- **Jest**
+- **React Testing Library**
+- **PostCSS**
 
 ## Testy
-Aplikacja jest szeroko testowana przy użyciu:
-- **Jest** - do testów jednostkowych
-- **React Testing Library** - do testów komponentów
-- **Testing Library User Event** - do symulowania interakcji użytkownika
-
+Aplikacja jest testowana przy użyciu:
+- **Jest**
+- 
 ## Dostępne skrypty
-
 W katalogu projektu możesz uruchomić:
 
 ### `npm start`
