@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-node-access */
 import { render, screen } from '@testing-library/react';
 import { testShop } from '../db';
 import { ShopListItem } from './ShopListItem';
